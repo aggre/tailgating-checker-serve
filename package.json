@@ -1,7 +1,7 @@
 {
-  "name": "ossforum-node-red",
+  "name": "tailgating-checker-serve",
   "version": "0.0.1",
-  "description": "OSS Promotion Forum - Application Group's IoT Project",
+  "description": "OSS Forum - Application Group's IoT Project",
   "main": "index.js",
   "dependencies": {
     "node-red": "^0.19.4"
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aggre/ossforum-node-red.git"
+    "url": "git+https://github.com/aggre/tailgating-checker-serve.git"
   },
   "author": "aggre",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aggre/ossforum-node-red/issues"
+    "url": "https://github.com/aggre/tailgating-checker-serve/issues"
   },
-  "homepage": "https://github.com/aggre/ossforum-node-red#readme"
+  "homepage": "https://github.com/aggre/tailgating-checker-serve#readme"
 }

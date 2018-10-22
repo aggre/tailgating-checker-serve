@@ -1,0 +1,48 @@
+[
+  {
+    "id": "78df3509.be1e9c",
+    "type": "tab",
+    "label": "Demo",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "cb3084c7.859748",
+    "type": "http in",
+    "z": "78df3509.be1e9c",
+    "name": "",
+    "url": "/:name",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 250,
+    "y": 160,
+    "wires": [["e78a42ab.5ad2a"]]
+  },
+  {
+    "id": "8e9b3416.0b1bb8",
+    "type": "http response",
+    "z": "78df3509.be1e9c",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 610,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "e78a42ab.5ad2a",
+    "type": "template",
+    "z": "78df3509.be1e9c",
+    "name": "",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "Hello {{req.params.name}}!",
+    "output": "str",
+    "x": 440,
+    "y": 160,
+    "wires": [["8e9b3416.0b1bb8"]]
+  }
+]

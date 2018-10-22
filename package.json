@@ -1,0 +1,26 @@
+{
+  "name": "ossforum-node-red",
+  "version": "0.0.1",
+  "description": "OSS Promotion Forum - Application Group's IoT Project",
+  "main": "index.js",
+  "dependencies": {
+    "node-red": "^0.19.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,json,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aggre/ossforum-node-red.git"
+  },
+  "author": "aggre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aggre/ossforum-node-red/issues"
+  },
+  "homepage": "https://github.com/aggre/ossforum-node-red#readme"
+}

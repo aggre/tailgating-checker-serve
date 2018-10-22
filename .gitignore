@@ -61,5 +61,4 @@ typings/
 .next
 
 # tsc build output
-*.js
-*.d.ts
+dist

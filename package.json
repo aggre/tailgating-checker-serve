@@ -23,8 +23,8 @@
     "tslint-xo": "^0.9.0"
   },
   "scripts": {
-    "start": "node ./src",
-    "test": "mocha ./src/*.test.js",
+    "start": "node ./dist",
+    "test": "mocha ./dist/*.test.js",
     "pretest": "npm run build",
     "build": "tsc -p ./",
     "prebuild": "npm run lint",

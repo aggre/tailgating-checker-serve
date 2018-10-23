@@ -2,6 +2,29 @@
 
 OSS Promotion Forum - Application Group's IoT Project
 
+## REST API
+
+Endpoint: https://tailgating-checker-serve.now.sh
+
+```
+### /classify [POST]
+
++ Request (multipart/form-data)
+
+        {
+            "img": JPEG or PNG image,
+            "speed": number
+        }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "safety": boolean
+            }
+```
+
 ## Getting Started
 
 ```bash

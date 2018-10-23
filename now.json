@@ -1,4 +1,4 @@
 {
   "alias": "tailgating-checker-serve",
-  "files": ["flow.json"]
+  "files": ["flow.json", "settings.js"]
 }

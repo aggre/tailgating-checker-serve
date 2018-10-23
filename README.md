@@ -25,6 +25,8 @@ Endpoint: https://tailgating-checker-serve.now.sh
             }
 ```
 
+**Try this API with your browser:** https://tailgating-checker-serve.now.sh/classify
+
 ## Getting Started
 
 ```bash

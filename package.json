@@ -4,8 +4,7 @@
   "description": "OSS Forum - Application Group's IoT Project",
   "main": "index.js",
   "dependencies": {
-    "node-red": "^0.19.4",
-    "node-red-contrib-http-request-multipart": "^0.2.11"
+    "node-red": "^0.19.4"
   },
   "devDependencies": {
     "prettier": "^1.14.3"

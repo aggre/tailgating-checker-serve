@@ -1,3 +1,4 @@
 {
-  "alias": "tailgating-checker-serve"
+  "alias": "tailgating-checker-serve",
+  "files": ["flow.json"]
 }

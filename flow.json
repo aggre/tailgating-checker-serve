@@ -55,7 +55,7 @@
     "swaggerDoc": "",
     "x": 1110,
     "y": 420,
-    "wires": [["57797753.7c5b98"]]
+    "wires": [["d84c5a30.1ed9a8"]]
   },
   {
     "id": "cb0d9eeb.1a605",
@@ -87,11 +87,11 @@
     "id": "e0494afd.23fa88",
     "type": "function",
     "z": "b946d31f.fb343",
-    "name": "Safety",
-    "func": "const SAFETY_THRESHOLD = 0.6\nconst DANGER_THRESHOLD = 0.6\n\nconst { payload } = msg\nconst { result } = payload\nconst { safe, caution } = result\nconst danger = safe < caution ? 1 : 0\nconsole.log(result, danger)\n\nmsg.payload = danger\n\nreturn msg",
+    "name": "Safety?",
+    "func": "\nconst { payload } = msg\nconst { result } = payload\nconst { safe, caution } = result\nconst danger = safe < caution ? 1 : 0\nconsole.log('is safety', result, danger)\n\nmsg.payload = danger\n\nreturn msg",
     "outputs": 1,
     "noerr": 0,
-    "x": 1270,
+    "x": 1280,
     "y": 580,
     "wires": [["f0f841c2.66948"]]
   },
@@ -116,8 +116,20 @@
     "func": "const { req } = msg\nconst [ image ] = req.files\n\nmsg.headers = {\n    'Content-Type': 'application/json',\n    'Accept': 'application/json'\n}\n\nmsg.payload = {\n    features: {\n        speed: req.body.speed\n    },\n    image: {\n        content: image.buffer.toString('base64'),\n        filename: image.originalname\n    }\n}\n\nreturn msg",
     "outputs": 1,
     "noerr": 0,
-    "x": 1270,
+    "x": 1390,
     "y": 420,
     "wires": [["84c58d0d.dd7b6"]]
+  },
+  {
+    "id": "d84c5a30.1ed9a8",
+    "type": "function",
+    "z": "b946d31f.fb343",
+    "name": "Logs",
+    "func": "console.log('request', msg)\n\nreturn msg",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 1270,
+    "y": 420,
+    "wires": [["57797753.7c5b98"]]
   }
 ]

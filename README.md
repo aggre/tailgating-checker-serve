@@ -43,6 +43,14 @@ $ npm start
 
 ## Deploy
 
+In first, install `now` package.
+
+```bash
+$ npm i -g now
+```
+
+Deploy is as follows.
+
 ```bash
 $ now
 > Success! Deployment ready

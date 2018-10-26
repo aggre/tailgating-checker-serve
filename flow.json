@@ -88,7 +88,7 @@
     "type": "function",
     "z": "b946d31f.fb343",
     "name": "Safety",
-    "func": "const SAFETY_THRESHOLD = 0.6\nconst DANGER_THRESHOLD = 0.6\n\nconst { payload } = msg\nconst { result } = payload\nconst { safe, caution } = result\nconst safety = safe >= SAFETY_THRESHOLD && caution <= DANGER_THRESHOLD\nconsole.log(result, safety)\n\nmsg.payload = safety ? 0 : 1\n\nreturn msg",
+    "func": "const SAFETY_THRESHOLD = 0.6\nconst DANGER_THRESHOLD = 0.6\n\nconst { payload } = msg\nconst { result } = payload\nconst { safe, caution } = result\nconst danger = safe < caution ? 1 : 0\nconsole.log(result, danger)\n\nmsg.payload = danger\n\nreturn msg",
     "outputs": 1,
     "noerr": 0,
     "x": 1270,
